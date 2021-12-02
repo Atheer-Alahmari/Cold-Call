@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btn(_ sender: UIButton) {
-        let randomX =  Int.random(in: 0..<5)
+        let randomX =  Int.random(in: 0...6)
      
         textChangIt.text = arr[randomX]
     }

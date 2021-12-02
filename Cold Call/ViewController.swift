@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    let arr = ["Uyanga","Courtney","Jay","Bryant","Jimmy","Cody","Ryota"]
+
+ 
+    @IBOutlet weak var textChangIt: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+      
     }
 
-
+    @IBAction func btn(_ sender: UIButton) {
+        let randomX =  Int.random(in: 0..<5)
+     
+        textChangIt.text = arr[randomX]
+    }
 }
 
